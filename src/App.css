@@ -1,0 +1,69 @@
+/* body {
+background-color: #185519;
+} */
+.card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ques{
+  height: 50%;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  box-shadow:0 5px 10px rgb(166, 166, 166) ;
+}
+.ques p{
+  margin-top: 40px;
+}
+.opt{
+ padding: 2rem;
+ border-top:1px solid white ;
+}
+.opt ul{
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  list-style: none;
+}
+.opt ul li {
+  padding: 1rem;
+  background-color: rgb(219, 219, 219);
+  color: #333;
+  cursor: pointer;
+  border-radius: 8px;  /* Rounded corners for a softer look */
+  transition: all 0.3s ease;  /* Smooth transition effect */
+  margin-bottom: 10px;  /* Add spacing between items */
+}
+
+.opt ul li:hover {
+  background-color: rgb(181, 181, 181);  /* Darker background on hover */
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2);  /* More natural shadow effect */
+  transform: scale(1.05);  /* Slight scaling for hover effect */
+}
+
+.opt ul li:active {
+  transform: scale(1);  /* Prevent too much scaling on click */
+  background-color: rgb(160, 160, 160);  /* Slightly darker color when clicked */
+}
+
+.score{
+  height: 500px;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
